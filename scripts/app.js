@@ -42,10 +42,9 @@ function main() {
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_2D_MIN_FILTER, gl.LINEAR);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_2D_MAG_FILTER, gl.LINEAR);
     }
-    var url = "textures/neptune.jpg";
-    if ((new URL(url, window.location.href)).origin !== window.location.origin) {
-        image.crossOrigin = "";
-    }
+    var url = "https://github.com/Ejngineer/GraphicsWebsite/blob/master/textures/neptune.jpg";
+    image.crossOrigin = "anonymous";
+
     image.src = url;
     // Vertex shader source code
     var vertCode =
@@ -75,7 +74,7 @@ function main() {
         'uniform sampler2D texture;' +
         
         'void main(void) {' +
-        ' gl_FragColor = texture2D(texture, TexCoord);' +
+        ' gl_FragColor = vec4(0.0,1.0,0.0,1.0);' +
         '}';
         
     // Create fragment shader object
@@ -123,13 +122,6 @@ function main() {
     gl.enableVertexAttribArray(1);
     gl.vertexAttribPointer(2, 2, gl.FLOAT, false, sphere.stride, 24);
     gl.enableVertexAttribArray(2);
-
-    gl.activeTexture(gl.TEXTURE0);
-
-    gl.bindTexture(gl.TEXTURE_2D, texture);
-
-    gl.uniform1i(sampler, 0);
-
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, sphere.vboIndex);
     gl.drawElements(gl.TRIANGLES, sphere.getIndexCount(), gl.UNSIGNED_SHORT, 0);
   }
