@@ -36,8 +36,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .w3-image
 {
+    max-width:100%; 
     float: center;
-    width: 550px; 
+    width: 550px;
     height: 600px;
     object-fit: cover;
 }img{vertical-align:middle}a{color:inherit}
