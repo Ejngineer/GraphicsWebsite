@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Electrolize">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="scripts/app.js"></script>
+<!-- <script src="scripts/app.js"></script> -->
 <style>
 body {font-family: "Electrolize", sans-serif}
 h1,h2,h3,h4,h5,h6{font-family: "Press Start 2P", sans-serif}
@@ -32,6 +32,10 @@ h1,h2,h3,h4,h5,h6{font-family: "Press Start 2P", sans-serif}
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user-circle w3-xxlarge w3-text-green" aria-hidden="true"></i>
     <p>ABOUT</p>
+  </a>
+  <a href="#resume" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-file-pdf-o w3-xxlarge w3-text-green" aria-hidden="true"></i>
+    <p>RESUME</p>
   </a>
   <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-microchip w3-xxlarge w3-text-green" aria-hidden="true"></i>
@@ -74,103 +78,63 @@ h1,h2,h3,h4,h5,h6{font-family: "Press Start 2P", sans-serif}
         a tools programmer because it will expose me to many different problems and people in the industry. I want to work on the tech that help artists and developers create
         the amazing games we play. I encourage you to take a look around and explore all of my projects. If you like what you see, be sure to contact me. You may also download my resume from this site as well.
     </p>
-    <p>
-      Take a look at my tools section to see some of my projects such as my OpenGL Mesh Viewer. I also detailed my experience as a Jr. Graphics programmer working on MLB The Show 23 at San Diego Studio! 
-    </p>
-    <h3 class="w3-padding-16 w3-text-green">My Skills</h3>
-    <p class="w3-wide">C++</p>
-    <div class="w3-white">
-      <div class="w3-green" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">Python</p>
-    <div class="w3-white">
-      <div class="w3-green" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">C</p>
-    <div class="w3-white">
-      <div class="w3-green" style="height:28px;width:50%"></div>
-    </div>
-    <p class="w3-wide">OpenGL</p>
-    <div class="w3-white">
-      <div class="w3-green" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">GLSL</p>
-    <div class="w3-white">
-      <div class="w3-green" style="height:28px;width:75%"></div>
-    </div>
-    <p class="w3-wide">3D Math</p>
-    <div class="w3-white">
-      <div class="w3-green" style="height:28px;width:80%"></div>
-    </div>
-    <br>
-    
-    <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div> -->
 
-    <a href="Links/RedondoGraphicsResume.pdf" class="w3-button w3-green w3-text-black w3-padding-large w3-section">
-      <i id="download" class="fa fa-file-pdf-o"></i> Check out my resume
+    <header class="w3-justify w3-text-green w3-padding-64" id="about">
+      <h3 class="w3-text-green">Work Experience</h2>
+      <hr style="width:1840px" class="w3-opacity">
+      <p class="w3-text-green">I spent a year working as a contracted Jr. Graphics Programmer at San Diego Studio who is best known for their hit series, MLB The Show.
+           I specifcally worked on MLB The Show 23 until its release on March 23, 2023. After that, I continued to fulfill my role for the Studio's next title. As a Jr. 
+           Graphics Programmer I mainly worked in tools, supporting artist and graphics programmers during the development of our games. A big part of my job was to help ease the workload
+          on my team members. There was significant techincal debt that had built up over the years during development and I was tasked with helping break down that debt alongside my team. 
+          as a result, my tasks stretched over a wide range of contributions in UI, utilities, automation, serliazation/deserialization, and graphics. 
+          I performed my duties in a fast paced agile environment maintaining clear and constant communication with my team members. Furthermore I made use of my extensive experience 
+          in C++ and Python programming as well as some bash scripting while working with a large AAA engine. One tool I have become very familiar with and has proved incredibly useful throughout 
+          both my professional and personal endeavors is ImGui, a graphical user interface. Although I can't go into detail about how I used it during my contract I 
+          hope you can take a look at my Real-Time ImGui OpenGL Mesh Viewer. This is a personal project I worked on last year just before getting my job at San Diego Studio.</p>
+      </p>
+    </header>
+  </div>
+
+  <div>
+    <a href="Links/RedondoToolsResume.pdf" class="w3-button w3-green w3-text-black w3-padding-large w3-section w3-xlarge" id="resume">
+      <i id="link" class="fa fa-file-pdf-o"></i> Check out my resume
     </a>
-    
-    <!-- Projects table -->
-    <div class="w3-justify w3-text-green w3-padding-64" id="projects">
-      <h3 class="w3-padding-16 w3-text-green">My Projects</h3>
-      <div class="w3-row-padding" style="margin:0px 0px">
-        <div class="w3-half w3-margin-bottom w3-zoom">
-          <ul class="w3-ul w3-green w3-center w3-opacity w3-hover-opacity-off">
-            <li class="w3-green w3-text-black w3-xlarge w3-padding-32">Graphics</li>
-            <img class="w3-image" src="images/mat.webp">
-            <li class="w3-green w3-padding-24">
-              <button onclick="window.open('https://ejngineer.github.io/GraphicsWebsite/Graphics.html', '_self');" class="w3-button w3-black w3-padding-large w3-hover-white">Take a look</button>
-            </li>
-          </ul>
+  </div>
+  
+  <!-- Projects table -->
+  <div class="w3-justify w3-text-green w3-padding-64" id="projects">
+    <h4 class="w3-padding-16 w3-text-green">My Projects</h3>
+        <p
+        <button onclick="window.open('https://github.com/Ejngineer/MeshViewer', '_self');" class="w3-button w3-green w3-text-black w3-padding-large w3-section">OpenGL mesh viewer</button>
+        </p>
+        <div>
+          <p
+          <button onclick="window.open('https://github.com/Ejngineer/OpengGLDemos/tree/Instancing_Blinn_Phong_Demo', '_self');" class="w3-button w3-green w3-text-black w3-padding-large w3-section"> Normal and Parallax Mapping Demo</button>
+        </p>
         </div>
-
-        <div class="w3-half w3-margin-bottom w3-zoom w3-opacity w3-hover-opacity-off">
-          <ul class="w3-ul w3-green w3-center ">
-            <li class="w3-green w3-text-black w3-xlarge w3-padding-32">Tools</li>
-            <img src="images/692448.webp" class="w3-image">
-            <li class="w3-green w3-padding-24">
-              <button onclick="window.open('https://ejngineer.github.io/GraphicsWebsite/tools.html', '_self');" class="w3-button w3-black w3-padding-large w3-hover-white">Take a look</button>
-            </li>
-          </ul>
+        <div>
+          <p 
+          <button onclick="window.open('https://github.com/Ejngineer/OpengGLDemos', '_self');" class="w3-button w3-green w3-text-black w3-padding-large w3-section">Instancing Demo</button>
+          </p>
         </div>
-
-        <!-- <div class="w3-third w3-zoom"> -->
-          <!-- <ul class="w3-ul w3-green w3-center w3-opacity w3-hover-opacity-off"> -->
-            <!-- <li class="w3-green w3-text-black w3-xlarge w3-padding-32">Games</li> -->
-            <!-- <img src="images/space.webp" class="w3-image"> -->
-            <!-- <li class="w3-green w3-padding-24"> -->
-              <!-- <button onclick="window.open('https://ejngineer.github.io/GraphicsWebsite/games.html', '_self');" class="w3-button w3-black w3-padding-large w3-hover-white">Take a look</button> -->
-            <!-- </li> -->
-          <!-- </ul> -->
-        <!-- </div> -->
-      <!-- End Grid/Pricing tables -->
-      </div>
+        <div>
+          <p 
+          <button onclick="window.open('https://github.com/Ejngineer/OpenGLPBRDemo', '_self');" class="w3-button w3-green w3-text-black w3-padding-large w3-section">PBR Demo</button>
+          </p>
+        </div>
+        <div>
+          <p 
+          <button onclick="window.open('https://github.com/Ejngineer/OpenGLPBRDemo/tree/IBL_Branch', '_self');" class="w3-button w3-green w3-text-black w3-padding-large w3-section">PBR with IBL Demo</button>
+          </p>
+        </div>
     </div>
-    
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-text-green" id="contact">
     <h2 class="w3-text-green">Contact Me</h2>
     <hr style="width:1840px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Easton, US</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Easton, MD, US</p>
       <p><i class="fa fa-phone fa-fw w3-text-green w3-xxlarge w3-margin-right"></i> Phone: 443-239-1819</p>
       <p><i class="fa fa-envelope fa-fw w3-text-green w3-xxlarge w3-margin-right"> </i> Email: Ered560@Gmail.com</p>
     </div><br>
@@ -198,8 +162,8 @@ h1,h2,h3,h4,h5,h6{font-family: "Press Start 2P", sans-serif}
   <!-- End footer -->
   </footer>
 
-<!-- END PAGE CONTENT -->
 </div>
+<!-- END PAGE CONTENT -->
 
 </body>
 </html>
